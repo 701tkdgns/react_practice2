@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Psh_Header, Psh_Services, Psh_Projects, Psh_Contact} from './containers';
+
+import {Psh_Nav} from './components';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <Psh_Nav />
+        <Psh_Header />
+      </div>
+
+      <Psh_Services />
+      <Psh_Projects />
+      <Psh_Contact />
     </div>
-  );
+  )
 }
 
 export default App;
