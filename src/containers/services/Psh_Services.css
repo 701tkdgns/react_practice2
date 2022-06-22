@@ -1,0 +1,84 @@
+.service__process{
+    text-align: center;
+    justify-content: center;
+    margin: 5rem auto;
+}
+
+.service__process h1{
+    font-weight: 800;
+    font-size: 48px;
+    background: linear-gradient(to right top, #ffe17d 0%, #ffffff 100%);
+    color: transparent;
+    -webkit-background-clip:text;
+    background-clip: text;
+}
+
+.cat-icon{
+    margin-bottom: 1rem;
+    font-size: 62px;
+    color: #F0FFFF;
+}
+
+.cat-cap p {
+    color: #A5A7C5;
+    font-size: 17px;
+    font-weight: 600;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    margin: 0;
+    line-height: 1.5
+}
+
+.cat-cap h5{
+    color: #FFF;
+    font-size: 46px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block
+}
+
+
+
+
+.single-cat{
+    display:inline-block;
+    position: relative;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    z-index: 1;
+    margin-bottom: 1rem;
+    transition: all .5s ease;
+}
+
+.single-cat:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    margin-top: .1rem;
+    background: #f3f39f;
+    display: inline-flex;
+    transition: all .5s ease;
+}
+
+.single-cat:hover{
+    transform: translateY(-10px); 
+}
+
+.single-cat:hover:after{
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+
+    .cat-cap {
+        font-size: 15px
+    }
+}

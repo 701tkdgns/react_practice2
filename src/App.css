@@ -9,7 +9,3 @@ a{
     color: unset;
     text-decoration: none;
 }
-
-.psh__header_section{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/src/assets/nasa-Q1p7bh3SHj8-unsplash.jpg);
-}

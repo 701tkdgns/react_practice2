@@ -1,8 +1,11 @@
 import React from 'react'
+import './Psh_Contact.css'
 
 const Psh_Contact = () => {
   return (
-    <div>Psh_Contact</div>
+    <div id="contact">
+      
+    </div>
   )
 }
 
