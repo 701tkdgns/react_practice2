@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <div>
-        <Psh_Nav />
+        <Psh_Nav/>
         <Psh_Header />
       </div>
 
