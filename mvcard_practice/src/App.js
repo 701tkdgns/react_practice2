@@ -82,13 +82,14 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [movies, setMovies] = useState([]);
 
+  // useEffect : 초기 실행 함수 > 프로그램이 실행될 때 안에 있는 내용들이 우선적으로 실행
   useEffect(() => {
     searchMovies("Batman");
   }, []);
 
   const searchMovies = async (title) => {
-    const response = await fetch(`${API_URL}&s=${title}`);
-    const data = await response.json();
+    const response = await fetch(`${API_URL}&s=${title}`); // API 내용 가져오기
+    const data = await response.json(); // JSON > KEY, VALUE 모두 STRING
 
     setMovies(data.Search);
   };
@@ -100,17 +101,17 @@ const App = () => {
       <div className="search">
         <input
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          onChange={(e) => setSearchTerm(e.target.value)} // 검색어 설정
           placeholder="Search for movies"
         />
         <img
           src={SearchIcon}
           alt="search"
-          onClick={() => searchMovies(searchTerm)}
+          onClick={() => searchMovies(searchTerm)} // 돋보기 클릭시 함수
         />
       </div>
 
-      {movies?.length > 0 ? (
+      {movies?.length > 0 ? ( // movie 객체가 있고, 길이가 0보다 큰가?
         <div className="container">
           {movies.map((movie) => (
             <MovieCard movie={movie} />
